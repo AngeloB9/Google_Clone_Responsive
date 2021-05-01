@@ -37,6 +37,10 @@
     width: 680px;
     margin: 31px auto;
   }
+  .mobile_nav .mobile_menu {
+    column-gap: 15px;
+    padding: 10px 50px 0 0;
+  }
 }
 
 @media screen and (min-width: 1024px) {
