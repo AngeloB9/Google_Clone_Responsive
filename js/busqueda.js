@@ -2,9 +2,19 @@
 'use strict';
 
 const input = document.getElementById('search');
+const input2 = document.getElementById('search2');
 const button = document.getElementById('button');
 
 input.addEventListener('change', (event) => {
+  event.preventDefault();
+  const submit = event.target.value;
+  const query = `http://www.google.com/search?hl=es&q=${submit}`;
+
+  button.onclick = function () {
+    window.open(query);
+  };
+});
+input2.addEventListener('change', (event) => {
   event.preventDefault();
   const submit = event.target.value;
   const query = `http://www.google.com/search?hl=es&q=${submit}`;
